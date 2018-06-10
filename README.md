@@ -1,2 +1,3 @@
 # Masterclass
-different projects 
+
+Different test of Java functions
