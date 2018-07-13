@@ -7,22 +7,17 @@ public class Methodes {
             levelCompleted = 5,
             bonus = 100;
 
+        calculateScore(gameOver, score, 5, 100);
+        calculateScore(gameOver, score, 8, 800);
+
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
+
         if(gameOver){
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
             System.out.println("Your final score was " + finalScore);
         }
-        score = 10000;
-        levelCompleted = 8;
-        bonus = 200;
-
-        if (gameOver){
-            int finalScore = score + (levelCompleted * bonus);
-            System.out.println("Your final score was " + finalScore);
-        }
-    }
-
-    public static void calculateScore(){
-
     }
 }
